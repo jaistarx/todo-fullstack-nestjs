@@ -1,0 +1,26 @@
+.inputOuter{
+    margin-top: 20px;
+    align-items: center;
+}
+.unameOuter{
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    /* margin: auto; */
+}
+.listOuter{
+    margin-Top: 20px;
+    margin-bottom: 5px;
+    background-color: white;
+    padding: 10px 30px;
+    /* max-width: 700px; */
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.spanHead{
+    /* color: white; */
+    font-size: large;
+    font-weight: bold;
+}
