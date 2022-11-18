@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 const InputList = ({ setUserName, setIsLoggedIn }) => {
   const navigate = useNavigate();
   const [userId, setUserId] = useState(
-    JSON.parse(localStorage.getItem("id")) || 1
+    JSON.parse(localStorage.getItem("id")) || -1
   );
   const [itemArray, setItemArray] = useState([]);
   const [input, setInput] = useState("");
@@ -135,7 +135,7 @@ const InputList = ({ setUserName, setIsLoggedIn }) => {
                 />
                 <div>
                   <Button variant="contained" color="secondary" onClick={edit}>
-                    Edit
+                    Save
                   </Button>
                 </div>
               </div>

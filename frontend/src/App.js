@@ -6,6 +6,11 @@ import { useState } from "react";
 import ProtectedRoute from "./components/protectedRoute/protectedRoute";
 import SignUp from "./components/signup/signup";
 
+window.addEventListener("storage", () => {
+  localStorage.clear();
+  window.location.reload();
+});
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(
     localStorage.getItem("loggedIn") || false

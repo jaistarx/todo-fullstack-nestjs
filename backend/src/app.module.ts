@@ -6,6 +6,7 @@ import { UserModule } from './user/user.module';
 import { ListModule } from './list/list.module';
 import { User } from './user/entities/user.entity';
 import { List } from './list/entities/list.entity';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { List } from './list/entities/list.entity';
     }),
     UserModule,
     ListModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],

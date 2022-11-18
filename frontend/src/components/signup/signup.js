@@ -27,7 +27,7 @@ function SignUp() {
         }),
       });
       const res = await response.json();
-      console.log(response);
+    //   console.log(response);
       setButtonLoad(false);
       if (res.errno === 1062) {
         alert("User already exist!!!");
